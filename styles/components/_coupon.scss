@@ -1,0 +1,57 @@
+@use '../abstract/variable' as *;
+
+#coupon {
+  background-color: $tertiary-color;
+  padding: 4rem;
+  text-align: center;
+  .text {
+    color: $primary-color;
+    h2 {
+      margin: 2rem;
+      font-size: calc($text-size/1.7);
+    }
+  }
+  .input {
+    margin: 0 auto;
+    width: 575px;
+    border-radius: 20px;
+    border: 4px solid $white;
+    background: $white;
+    input {
+      border-radius: 20px;
+      height: 40px;
+      border: none;
+      width: 540px;
+      outline: none;
+      text-align: center;
+      font-size: calc($text-size/2);
+      color: $secondary-color;
+    }
+    &:hover,
+    &:focus-within {
+      box-shadow: 1px 1px 8px 1px $primary-color;
+    }
+  }
+  button {
+    margin-top: 0.85rem;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    background-color: $primary-color;
+    color: $button-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: calc($text-size/3);
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid $secondary-color;
+    border-radius: 40px;
+    &:hover {
+      background-color: $button-color;
+      color: $primary-color;
+      transition: 0.5s;
+      transform: scale(1.1);
+    }
+  }
+}

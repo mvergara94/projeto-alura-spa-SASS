@@ -1,0 +1,25 @@
+@use '../abstract/variable' as *;
+
+.banner {
+  background: url('../imagens/banner.jpeg') 27% center no-repeat;
+  min-height: 350px;
+  background-size: cover;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inner-banner {
+    padding: 3rem;
+    background-color: $tertiary-color;
+    opacity: 0.8;
+    border-radius: 45px;
+    h1 {
+      font-size: $text-size;
+      color: $primary-color;
+    }
+    h2 {
+      font-size: calc($text-size / 2);
+      color: $secondary-color;
+    }
+  }
+}

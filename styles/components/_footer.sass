@@ -1,0 +1,20 @@
+@use '../abstract/_variable' as *
+
+@mixin bg-colors($lado, $cores...)
+    @if $lado == left
+        background: linear-gradient(to left, $cores)
+    @else 
+        background: linear-gradient(to right, $cores)
+  
+  
+
+footer
+  text-align: center
+  font-size: calc( $text-size / 2 )
+  border-top: 2px solid $primary-color
+  margin-top: 1rem
+  padding: 1.2rem
+  color: white
+  @include bg-colors("right",$primary-color,$secondary-color,$tertiary-color)
+  i
+    color: $red
